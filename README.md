@@ -25,7 +25,7 @@ you will have a challenge unifying energy consumption data for the same time sli
    5. Extend your dashboard with a simple user interface and visualize the time zone differences 
    within the data. 
 
-   *Submit your code as a HTML file to Gitlab for this step (no submssion required on Moodle).*
+   *Submit your code as a HTML file to Gitlab for this step (no submission required on Moodle).*
 
 ===========================================================================
 
