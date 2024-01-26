@@ -43,7 +43,7 @@ public class DashboardController {
     public String showDashboard(Model model) {
         List<EnergyDashboard> energyDashboardList = energyDashboardService.getAllEnergyData();
         model.addAttribute("energyDashboardList", energyDashboardList);
-        return "dashboard";
+        return "index"; // Assuming your HTML file is named index.html
     }
 
     @GetMapping("/byTimestampAfter")
