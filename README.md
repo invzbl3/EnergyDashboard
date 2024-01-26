@@ -30,7 +30,7 @@ you will have a challenge unifying energy consumption data for the same time sli
 ===========================================================================
 
 To Run Spring Boot application. 
-Visit http://localhost:8080/dashboard in the web browser to see the energy data dashboard.
+Visit http://localhost:8080 in the web browser to see the energy data dashboard.
 
 This example provides a basic setup. Depending on the specific requirements and 
 the data visualization libraries you want to use, you may need to extend this example further. 
