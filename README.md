@@ -36,3 +36,5 @@ This example provides a basic setup. Depending on the specific requirements and
 the data visualization libraries you want to use, you may need to extend this example further. 
 Consider using JavaScript libraries like Chart.js or D3.js for more advanced and interactive 
 visualizations on the frontend.
+
+![Graphic for the project](https://github.com/invzbl3/EnergyDashboard/assets/24904825/9da0970e-eb37-4c1e-811c-d13799314b87)
