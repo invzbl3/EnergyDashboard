@@ -18,7 +18,12 @@
 <script>
     // Fetch data from backend controller
     fetch('/energy/dashboard')
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(data => {
             // Use data to create visualization
             const svg = d3.select("#visualization");
@@ -67,8 +72,23 @@
                 .style("text-anchor", "middle")
                 .text("Consumo_kWh");
         })
-        .catch(error => console.error('Error fetching data:', error));
+        .catch(error => {
+            console.error('Error fetching data:', error);
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = 'Error fetching data. Please try again later.';
+            document.body.appendChild(errorMessage);
+        });
 </script>
+
+<!-- Feedback Section -->
+<section>
+    <h2>Feedback</h2>
+    <form>
+        <label for="feedback">Please provide any feedback or report issues:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</section>
 
 </body>
 </html>
