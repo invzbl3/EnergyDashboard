@@ -2,14 +2,12 @@ package org.example.repository;
 
 import org.example.entity.EnergyDashboard;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Repository;
 import java.time.LocalDateTime;
 import java.util.List;
 
 /**
  * Create a repository interface that extends JpaRepository to interact with the database.
  */
-@Repository
 public interface EnergyDashboardRepository extends JpaRepository<EnergyDashboard, Long> {
 
     // Custom queries can be added if needed
